@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>João ❤️ Lani</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="icon.png">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      text-align: center;
+      padding: 40px 20px;
+      margin: 0;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      color: #bb86fc;
+      font-size: 3em;
+      margin-bottom: 30px;
+      animation: fadeIn 2s ease;
+    }
+
+    #contador {
+      font-size: 1.6em;
+      color: #ffffff;
+      animation: grow 1s ease-in-out infinite alternate;
+      transition: all 0.3s ease-in-out;
+    }
+
+    #juntos {
+      color: #bb86fc;
+      font-weight: 600;
+      margin-top: 5px;
+      font-size: 1.2em;
+    }
+
+    .imagem-romantica {
+      margin-top: 40px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00000088;
+    }
+
+    .legenda {
+      margin-top: 15px;
+      font-family: 'Great Vibes', cursive;
+      color: #ffffff;
+      font-size: 2em;
+    }
+
+    @keyframes grow {
+      from { transform: scale(1); }
+      to { transform: scale(1.05); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.2em; }
+      #contador { font-size: 1.3em; }
+      #juntos { font-size: 1em; }
+      .legenda { font-size: 1.5em; }
+    }
+  </style>
+</head>
+<body>
+  <h1>João ❤️ Lani</h1>
+  <div id="contador"></div>
+  <div id="juntos">Juntos</div>
+
+  <img src="foto.jpeg" alt="Foto romântica" class="imagem-romantica">
+  <div class="legenda">Te Vivo!</div>
+  <audio autoplay loop>
+    <source src="musica.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
